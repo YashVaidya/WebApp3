@@ -55,11 +55,4 @@ app.use(function (req, res, next) {
 });
 
 // set up routes
-app.use("/", indexRoutes);
-app.use("/campgrounds", campgroundRoutes);
-app.use("/campgrounds/:id/comments", commentRoutes);
-
-// set up the server
-app.listen(process.env.PORT, process.env.IP, function () {
-   console.log("The YelpCamp server is running at port: " + process.env.PORT); 
 });
